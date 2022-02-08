@@ -5,40 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-const employees = [
+const employee = 
 {
   name: 'Tom',
   location: 'New York',
   bloodGroup: 'B+',
   age: 28,
   profileImg: 'https://www.w3schools.com/howto/img_avatar.png'
-},
-{
-  name: 'Tom',
-  location: 'New York',
-  bloodGroup: 'B+',
-  age: 28,
-  profileImg: 'https://www.w3schools.com/howto/img_avatar.png'
-},
-{
-  name: 'Tom',
-  location: 'New York',
-  bloodGroup: 'B+',
-  age: 28,
-  profileImg: 'https://www.w3schools.com/howto/img_avatar.png'
-},
-{
-  name: 'Tom',
-  location: 'New York',
-  bloodGroup: 'B+',
-  age: 28,
-  profileImg: 'https://www.w3schools.com/howto/img_avatar.png'
-},
-];
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App employees={employees} />
+    <App employee={employee} title="welcome to react" />
   </React.StrictMode>,
   document.getElementById('root')
 );

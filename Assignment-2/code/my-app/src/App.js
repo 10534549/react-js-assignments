@@ -4,40 +4,34 @@ import './App.css';
 
 
 function App(props) {
- const {employees, title}=props;
-    
-return(
-  <div className="container App" >
-  {
-    employees.filter(item=>item.bloodGroup==='B+').map()((employee,index)=>(
+  const { employee, title } = props;
 
-   <div className="profile-details" key={index}>
+  return (
+    <div className="container App" >
+
       <div className="profile-image-container">
-      <img className="profile" src={employee.profileImg} width="100" height="100" alt="profile image sample">
-      </img>
-    </div>
-  <div className="title">
-    <h1>{employee.name}</h1>
-  </div>
-  <div className="profile-info">
-    <label>Location</label>
-    <strong>{employee.location}</strong>
-  </div>
-  <div className="profile-info">
-    <label>BloodGroup</label>
-    <strong>{employee.bloodGroup}</strong>
-  </div>
-  
-  <div className="profile-info">
-    <label>Age</label>
-    <strong>{employee.age}</strong>
-  </div>
-  </div>
-))
-  }
+        <img className="profile" src={employee.profileImg} width="100" height="100" alt="profile image sample">
+        </img>
+      </div>
+      <div className="title">
+        <h1>{employee.name}</h1>
+      </div>
+      <div className="profile-info">
+        <label>Location</label>
+        <strong>{employee.location}</strong>
+      </div>
+      <div className="profile-info">
+        <label>BloodGroup</label>
+        <strong>{employee.bloodGroup}</strong>
+      </div>
 
-</div>
-)
+      <div className="profile-info">
+        <label>Age</label>
+        <strong>{employee.age}</strong>
+      </div>
+    
+</div >
+);
 }
 
 
